@@ -11,6 +11,7 @@ program
   .description('Run a test script. Example: `minigun run benchmark.json`')
   .option('-p, --payload <path>', 'Set payload file (CSV)')
   .option('-o, --output <path>', 'Set file to write stats to (will output to stdout by default)')
+  .option('-e, --environment <name>', 'Set the environment to be used (one of the ones defined in the test script)')
   .action(commands.run);
 
 program
